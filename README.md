@@ -24,5 +24,8 @@
 <img width="1313" height="1440" alt="image" src="https://github.com/user-attachments/assets/fb100493-3449-4df5-a8d5-3f07d4fb663a" />
 
 
+просто хочу добавить что пока сервер работал тут была галочка, она пропала когда я удалила с azure приложение
+<img width="2358" height="1203" alt="image" src="https://github.com/user-attachments/assets/f5a54686-68b3-4d5b-86c8-9a51440159f8" />
+
 а это крокодильчик на счастье
 <img width="100" height="100" alt="croccy" src="https://github.com/user-attachments/assets/891c721a-0213-4624-8b18-4cc13c5ef32d" />
