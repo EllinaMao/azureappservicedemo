@@ -21,7 +21,8 @@
 <img width="879" height="1331" alt="image" src="https://github.com/user-attachments/assets/b4d27580-2592-4b84-b42d-7fb4352bd78c" />
 
 сюда тоже добавились 
-<img width="2451" height="645" alt="image" src="https://github.com/user-attachments/assets/3cd55acb-7a9d-4916-9bde-853e1dad5374" />
+<img width="1313" height="1440" alt="image" src="https://github.com/user-attachments/assets/fb100493-3449-4df5-a8d5-3f07d4fb663a" />
+
 
 а это крокодильчик на счастье
 <img width="100" height="100" alt="croccy" src="https://github.com/user-attachments/assets/891c721a-0213-4624-8b18-4cc13c5ef32d" />
