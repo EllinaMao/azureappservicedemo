@@ -5,3 +5,4 @@ urlpatterns = [
     path('', views.ProductListView.as_view(), name='product-list'),
     path('create/', views.ProductCreateView.as_view(), name='product-create'),
 ]
+

@@ -126,8 +126,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 # Настройки для Azure Storage
-DEFAULT_FILE_STORAGE = "storages.backends.azure_storage.AzureStorage"
 
-# AZURE_ACCOUNT_NAME = os.getenv("AZURE_ACCOUNT_NAME")
-# AZURE_ACCOUNT_KEY = os.getenv("AZURE_ACCOUNT_KEY")
-# AZURE_CONTAINER = os.getenv("AZURE_CONTAINER", "gallery-project")
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
+if os.getenv("AZURE_ACCOUNT_KEY"):
+    DEFAULT_FILE_STORAGE = "storages.backends.azure_storage.AzureStorage"
+    AZURE_ACCOUNT_NAME = os.getenv("AZURE_ACCOUNT_NAME")
+    AZURE_ACCOUNT_KEY = os.getenv("AZURE_ACCOUNT_KEY")
+    AZURE_CONTAINER = os.getenv("AZURE_CONTAINER", "gallery-project")
