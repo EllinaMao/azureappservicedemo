@@ -3,4 +3,5 @@
 python manage.py migrate core
 
 
-gunicorn --bind=0.0.0.0 --timeout 600 project.wsgi
+gunicorn --bind=0.0.0.0 --timeout 600 project.wsgi:application
+
