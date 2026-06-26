@@ -2,7 +2,7 @@ from django.shortcuts import render
 import random
 from .models import Product, Category, Tag
 
-def seed():
+def product_seed():
     Product.objects.create(
         name = "product1",
         price = round(random.uniform(100, 1000),2),
