@@ -127,8 +127,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 # Настройки для Azure Storage
 
-MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "media"
+# MEDIA_URL = "/media/"
+# MEDIA_ROOT = BASE_DIR / "media"
 
 # if os.getenv("AZURE_ACCOUNT_KEY"):
 DEFAULT_FILE_STORAGE = "storages.backends.azure_storage.AzureStorage"
