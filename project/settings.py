@@ -31,7 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://appdemo-efdbfceja6hgeqf0.polandcentral-01.azurewebsites.net",
+    "https://pv411pv412demoproducts-f6dkf8aafyh3asgn.polandcentral-01.azurewebsites.net",
 ]
 # Application definition
 
