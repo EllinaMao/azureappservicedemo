@@ -30,7 +30,7 @@ class Category(models.Model):
     
     class Meta:
         db_table = "dj_categories"
-        
+
 class Tag(models.Model):
     id = models.UUIDField(
         primary_key=True,
@@ -45,7 +45,7 @@ class Tag(models.Model):
     TagId: {self.id}
     Name: {self.name}
     """
-    
+
 
 class Product(models.Model):
     id = models.UUIDField(
@@ -53,19 +53,19 @@ class Product(models.Model):
         default=uuid.uuid4,
         editable=False
     )
-   
+
     name = models.CharField(null=False, max_length=300)
     price = models.FloatField(null = False)
     description = models.TextField(null=True)
-    image_path = models.URLField(null=True, blank=True, max_length=255)
+    image = models.ImageField(upload_to="products/", null=True, blank=True)
     created_at = models.DateField(default=datetime.now)
     deleted_at = models.DateField(null=True)
-    
+
     """ Relations """
-    
+
     category = models.ForeignKey(Category, null=True, default=None, on_delete=models.CASCADE)
     tags = models.ManyToManyField(Tag, blank=True, related_name='products')
-    
+
     def __str__(self):
         return f"""
     ProductID: {self.id},
@@ -76,7 +76,7 @@ class Product(models.Model):
     Created at: {self.created_at}
     Deleted at: {set_no_set(self.deleted_at)}
     """
-    
+
     class Meta:
         db_table = 'dj_products'
         constraints = [
@@ -85,4 +85,3 @@ class Product(models.Model):
                 name = 'price_gt_zero'
             )
         ]
-        

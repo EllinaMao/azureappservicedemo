@@ -24,6 +24,9 @@
                 No tags
             {% endfor %}
         </small>
+        {% if product.image %}
+    <img src="{{ product.image.url }}" alt="{{ product.name }}" width="150">
+        {% endif %}
     </li>
     {%empty%}
         <li>No products</li>

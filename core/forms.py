@@ -4,7 +4,7 @@ from .models import Product, Category, Tag
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
-        fields = ['name', 'description', 'price','category', 'tags']
+        fields = ['name', 'description', 'price','category', 'tags', 'image']
         
         widgets = {
             'name': forms.TextInput(),
@@ -12,7 +12,8 @@ class ProductForm(forms.ModelForm):
             'price': forms.NumberInput(),
             
             'category': forms.Select(),
-            'tags': forms.CheckboxSelectMultiple()
+            'tags': forms.CheckboxSelectMultiple(),
+            'image': forms.ClearableFileInput(),
         }
         
     def __init__(self, *args, **kwargs):
